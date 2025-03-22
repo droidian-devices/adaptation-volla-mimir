@@ -1,0 +1,16 @@
+# We can't rely on the Halium side, see [0] from the Ubuntu
+# Touch port for more details.
+#
+# [0] https://gitlab.com/ubports/porting/reference-device-ports/halium13/volla-tablet/volla-mimir/-/blob/main/overlay/system/usr/lib/systemd/system/load-wlan-fmradio-modules.service?ref_type=heads
+
+[Unit]
+Description=Post-halium container boot quirks for mimir
+After=android_boot_completed.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/modprobe wlan_drv_gen4m_6789
+ExecStart=/usr/sbin/modprobe fmradio_drv_mt6631_6635
+
+[Install]
+WantedBy=multi-user.target

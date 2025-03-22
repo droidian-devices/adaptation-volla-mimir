@@ -1,0 +1,20 @@
+Source: adaptation-volla-mimir
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Section: metapackages
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               debhelper-compat (= 13),
+Standards-Version: 4.5.0.3
+
+Package: adaptation-volla-mimir
+Architecture: arm64
+Depends: ${misc:Depends},
+         adaptation-hybris-api33-phone,
+         adaptation-volla-mimir-configs (= ${binary:Version}),
+         device-chassis-tablet,
+Description: Community adaptation for volla-mimir - metapackage
+
+Package: adaptation-volla-mimir-configs
+Architecture: arm64
+Depends: ${misc:Depends},
+Description: Community adaptation for volla-mimir - adaptation configurations
