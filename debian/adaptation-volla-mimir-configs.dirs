@@ -1,3 +1,4 @@
+/etc/apt/apt.conf.d
 /etc/apt/sources.list.d
 /etc/apt/preferences.d
 /etc/apt/package-sideload-create.d

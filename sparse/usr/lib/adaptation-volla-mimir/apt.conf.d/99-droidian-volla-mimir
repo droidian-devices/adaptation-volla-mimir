@@ -1,0 +1,2 @@
+# Set the volla-mimir Droidian variant
+Acquire::Droidian::Variant "volla-mimir";
