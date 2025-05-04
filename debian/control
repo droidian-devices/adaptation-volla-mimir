@@ -10,6 +10,7 @@ Package: adaptation-volla-mimir
 Architecture: arm64
 Depends: ${misc:Depends},
          adaptation-hybris-api33-phone,
+         linux-bootimage-volla-mimir,
          adaptation-volla-mimir-configs (= ${binary:Version}),
          device-chassis-tablet,
 Description: Droidian for Volla Tablet - metapackage
